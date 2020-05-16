@@ -1,12 +1,14 @@
 # js-indexedDB Guide
 
-js-indexedDB is a npm package / javascript library to perform javascript indexeddb actions using async/await. Library is simple to use with vanilla javascript and any javascript frameworks like Angualr or react.
+js-indexedDB is a npm package / javascript library to perform javascript indexeddb actions using async/await. Library is simple to use with vanilla javascript and any javascript frameworks like Angualr .
 
 # Installation
 
 <p>TODO</p>
 
 # Usage
+
+## vanilla javascript and Angular
 
 ### Initial Configuration
 
@@ -79,8 +81,11 @@ const cofiguration = {
         Email: "James_UID0002@gmail.com",
         Type: "Premium"
     };
-       try {
+    try {
+        //add first user
         await db.add("UserDetails", user_1);
+
+        //add second user
         await db.add("UserDetails", user_2);
     } catch (error) {
         console.log(error);
@@ -188,7 +193,7 @@ const cofiguration = {
     };
 
     try {
-debugger
+
         let result = null;
         // Create database and its objects as per configuration
         const db = await jsIndexedDB(cofiguration);
@@ -276,4 +281,23 @@ debugger
     }
 })()
 
+```
+
+# how to use library with Angular
+
+- Step 1 : install jsIndexeddb npm package
+- Step 2 : add script in angular.json or (for verison <= 5 .angular-cli.json)
+<p>../node_modules/.../dist/...js"</p>
+- step 3 : 
+<p>declare const mynpmmodule: any;</p>
+
+- step 4 :
+```javascript
+  ngOnInit() {
+    debugger;
+  
+    const configuration ={.....}
+    this.db = await jsIndexedDB(configuration);
+ 
+  }
 ```

@@ -13,7 +13,17 @@
   },
   "keywords": [
     "indexeddb",
-    "javascript"
+    "javascript indexeddb",
+    "indexeddb with async/await",
+    "indexeddb with async await",
+    "index db",
+    "dbindex",
+    "dbindexed",
+    "javascript",
+    "async/await",
+    "indexeddb npm",
+    "indexeddb angular",
+    "angular"
   ],
   "author": "Chandra Shekhar",
   "license": "ISC",
@@ -22,7 +32,8 @@
   },
   "homepage": "https://github.com/meet-shekhar2009/js-indexeddb#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
