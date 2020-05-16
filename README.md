@@ -4,7 +4,11 @@ js-indexedDB is a npm package / javascript library to perform javascript indexed
 
 # Installation
 
-<p>TODO</p>
+```javascript
+
+npm i js-indexedb --save
+
+```
 
 # Usage
 
@@ -287,17 +291,22 @@ const cofiguration = {
 
 - Step 1 : install jsIndexeddb npm package
 - Step 2 : add script in angular.json or (for verison <= 5 .angular-cli.json)
-<p>../node_modules/.../dist/...js"</p>
-- step 3 : 
-<p>declare const mynpmmodule: any;</p>
 
+```javascript
+"scripts":["node_modules/js-indexedb/dist/js-IndexedDB.js"]
+```
+
+- step 3 : 
+```javascript
+declare const jsIndexedDB: any;
+```
 - step 4 :
 ```javascript
-  ngOnInit() {
-    debugger;
-  
-    const configuration ={.....}
-    this.db = await jsIndexedDB(configuration);
- 
+ async ngOnInit() {
+     const configuration ={.....}
+    let db = await jsIndexedDB(configuration);
+        let result = await db.get("UserDetails", "UID0001");
+      if (result)
+       this.User = result;
   }
 ```

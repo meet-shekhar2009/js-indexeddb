@@ -1,5 +1,5 @@
 {
-  "name": "js-indexeddb",
+  "name": "js-indexedb",
   "version": "1.0.0",
   "description": "project contains javascript library to perform javascript indexeddb actions using async/await ",
   "main": "index.js",

@@ -1,4 +1,4 @@
-module.exports.jsIndexedDB = (async function (config) {
+const jsIndexedDB = (async function (config) {
     let DB, index, request, store;
     let indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
     if (!config || typeof config != "object")
@@ -167,3 +167,4 @@ module.exports.jsIndexedDB = (async function (config) {
 
     }
 });
+module.exports={jsIndexedDB};
