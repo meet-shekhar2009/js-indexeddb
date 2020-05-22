@@ -9,11 +9,20 @@ js-indexedDB is a npm package / javascript library to perform javascript indexed
 npm i js-indexedb --save
 
 ```
+# Table of Content 
+
+1. [ Configurations. ](#a_configuration)
+2. [ Configuration details. ](#a_configuration_desc)
+3. [ Database initialization. ](#a_dbinit)
+4. [ Methods. ](#a_methods)
+5. [ Usage Complete Code. ](#a_completecode)
+6. [ How to use with Angular. ](#a_angular)
 
 # Usage
 
 ## vanilla javascript and Angular
 
+<a name="a_configuration"></a>
 ### Initial Configuration
 
 ```javascript
@@ -46,9 +55,10 @@ const cofiguration = {
 
 ```
 
+<a name="a_configuration_desc"></a>
 ### Configuration description 
 
-| Property | Is Mendetory | Default | Description |
+| Property | Is Mandatory | Default | Description |
 | --- | --- | --- | --- |
 | dbName | YES | NA | Actual Database Name. |
 | version | NO | 1 | Every time we change any schema change we have to increment version | 
@@ -61,7 +71,7 @@ const cofiguration = {
 
 
 ### Create and initialize database  objects as per configuration
-
+<a name="a_dbinit"></a>
 ``` javascript
 
     const db = await jsIndexedDB(cofiguration);
@@ -95,6 +105,7 @@ const cofiguration = {
         console.log(error);
     }
     
+    <a name="a_methods"></a>
 ```
 ### Get data
 
@@ -164,7 +175,7 @@ const cofiguration = {
 
     let result = await db.delete("UserDetails", "UID0001");
 ```    
-
+<a name="a_completecode"></a>
 ### Complete code
 
 ```javascript
@@ -286,7 +297,7 @@ const cofiguration = {
 })()
 
 ```
-
+<a name="a_angular"></a>
 # how to use library with Angular
 
 - Step 1 : install jsIndexeddb npm package

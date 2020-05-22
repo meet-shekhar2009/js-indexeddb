@@ -1,6 +1,6 @@
 {
   "name": "js-indexedb",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "project contains javascript library to perform javascript indexeddb actions using async/await ",
   "main": "index.js",
   "scripts": {
